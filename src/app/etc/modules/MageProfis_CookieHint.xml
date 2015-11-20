@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageProfis_CookieHint>
+            <active>true</active>
+            <codePool>local</codePool>
+        </MageProfis_CookieHint>
+    </modules>    
+</config>

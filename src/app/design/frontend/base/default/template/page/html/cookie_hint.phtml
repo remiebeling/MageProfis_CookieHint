@@ -1,0 +1,30 @@
+<?php $cookie = Mage::getSingleton('core/cookie'); ?>        
+<?php if ($cookie->get('cookiehint') != '1'): ?>
+    <div id="cookie-hint">
+        <div class="container">
+            <div class="info-text">
+                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cookie_hint')->toHtml() ?>
+            </div>
+            <div class="close-hint">
+                <?php echo $this->__('close') ?>
+            </div>
+            <div class="clearer"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#cookie-hint').hide();
+            setTimeout(function () {
+                jQuery('#cookie-hint').slideDown();
+            }, 1000);
+            jQuery('#cookie-hint .close-hint').click(function () {
+                jQuery.ajax({
+                    url: "<?php echo Mage::getUrl('cookie-hint/index/setcookie'); ?>",
+                    context: document.body
+                }).done(function () {
+                    jQuery('#cookie-hint').slideUp();
+                });
+            });
+        });
+    </script>
+<?php endif; ?>

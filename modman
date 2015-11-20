@@ -1,0 +1,4 @@
+src/app/code/local/MageProfis/CookieHint/                                       app/code/local/MageProfis/CookieHint/
+src/app/design/frontend/base/default/layout/mageprofis-cookiehint.xml           app/design/frontend/base/default/layout/mageprofis-cookiehint.xml
+src/app/design/frontend/base/default/template/page/html/cookie_hint.phtml       app/design/frontend/base/default/template/page/html/cookie_hint.phtml
+src/app/etc/modules/MageProfis_CookieHint.xml                                   app/etc/modules/MageProfis_CookieHint.xml
