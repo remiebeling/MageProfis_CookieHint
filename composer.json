@@ -1,0 +1,21 @@
+{
+  "name": "mageprofis/cookiehint",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Magento Cookie Hint",
+  "homepage": "https://github.com/remiebeling/MageProfis_CookieHint",
+  "require": {
+    "php": ">=5.3"
+  },
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Remi Ebeling",
+      "email": "remi@mage-profis.de",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
+ 
